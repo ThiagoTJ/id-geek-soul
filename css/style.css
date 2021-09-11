@@ -1,71 +1,20 @@
-#badge-carrinho{
-  border-radius: 100%;
-  position: absolute;
-  width: 10%;
-  top:-6%;
-  left:1%;
-  color:rgb(60, 41, 7);
-  background-color: #ffc107;
-  z-index: -1;
-  
-}
-#badge-carrinho:hover{
-  color: #f7f3e5;
-}
 #barra-navegacao{
   /* background-image: linear-gradient(to bottom,rgba(140, 150, 55, 0.857),rgb(59, 150, 89)); */
-  background-image: linear-gradient(to bottom,#7ec566,rgba(233, 36, 36, 0.96));
+  background-image: linear-gradient(to bottom,#5d645b,rgba(233, 36, 36, 0.96));
   /* box-shadow: 0 0 5px 1px rgba(140,150,55,0.857); */
-  box-shadow: 1px 2px 2px 2px  #ed4d30;
   font-size: large;
   z-index: 50;
   
-}
-#bemvindo{
-  color:rgba(205, 134, 63, 0.964);
-  font-weight: 700;
-  position: absolute;
-  top:16%;
-  left: 20%;
-  z-index: 50;
 }
 
 /* header */
 #cabecalho{
   height: 27vh;
-  background-image: linear-gradient(to right,#dd7b78d5, #d85a5adc);
+  background-image: linear-gradient(to bottom,#5d645b,rgba(233, 36, 36, 0.96));
   
 }
-#cadastre_h1{
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: 700;
-  color: #ed4d30;
 
-}
-/* carrinho  */
-.carrinho{
-  position: absolute;
-  top:22%;
-  right:5%;
-  height: 23%;
-  width:15%;
-  z-index: 80;
-}
-
-/* cadastro com campo nao valido */
-.campo_nao_valido{
-  border:1px solid red;
-  box-shadow: 0 0 8px 5px  rgba(232, 25, 25, 0.809);
- 
-}
-.campo_valido{
-  border:1px solid green;
-  box-shadow: 0 0 8px 5px  rgba(29, 140, 7, 0.809);
- 
-}
-/* so funciona na 1 pagina para teste do cliente*/
+/* a implementar*/
 #darkmode{
   position: absolute;
   top: 22%;
@@ -76,38 +25,10 @@
   color: #f7f3e5;
   z-index: 50;
 }
-/* itens do menu produtos */
-#dropdown_items{
- background-color: #ed4c30de;
-  
-}
-#dropdown_items a:hover{
-background-color: rgba(190, 190, 202, 0.501);
-}
-#dropdown_items a{
-
-  color: rgb(255, 255, 255);
-}
-#formulario_mensagem_envio{
-padding-top: 70px;
-padding-bottom: 50px;
-margin: auto;
-
-text-align: center;
-}
-#fundo_formulario_ok{
-  margin-top: 50px;
-  height: 50%;
-  width: 100%;
-  background-color: rgba(95, 158, 160, 0.316);
-  border-radius: 20px;
-}
-#fundo_formulario_ok h3{
-  margin-left: 10%;;
-}
 html {
   scroll-behavior: smooth;
 }
+
 .ImgFooter{ /* img dos logos redes sociais*/
   height: 2vw;
   margin-left: 2vw;
@@ -124,34 +45,20 @@ html {
   position: fixed;
   top: 70%;
   right:8%;
- 
   background-color: rgb(109, 186, 189);
   border-radius: 10%;
   height:3%;
   width: auto;
 }
 #icone_subir:hover{
- 
   background-color: rgba(128, 255, 0, 0.823);
-  
 }
 #lateral{
   background-color: #f0e9d194;
   box-shadow: -2px 0 2px 2px grey;
   z-index: -1; /* o z index negativo fez um efeito transparente na borda do aside*/
 }
-#lateral iframe{
-  border-radius: 10px;
-  box-shadow: 0 0 10px 2px rgba(255, 68, 0, 0.748);
-}
-#lateral p{
-  margin-left: 10px;
-  font-weight: 500;
-}
-#lateral div{
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
+
 #libras_id{
   position:fixed;
   top:80%;
@@ -169,9 +76,9 @@ html {
   background-color: rgba(128, 128, 128, 0.665);
 }
 
-#parceiros_container div:hover{
+/* #parceiros_container div:hover{
 transform: scale(1.20);
-}
+} */
 /* MAIN */
 #principal{
   background-image: linear-gradient(to bottom,#a8a082, rgba(165, 158, 103, 0.629));
@@ -191,9 +98,10 @@ transform: scale(1.20);
   flex-wrap: nowrap;
   position: relative;
   font-size: larger;
-  background-color: #d3ae4854;
+  background-image: linear-gradient(to bottom,#5d645b,rgba(233, 36, 36, 0.96));
   bottom:0;
   width: auto;
+  color: #f7f3e5;
   height: 8vh;
   margin-left: -15px; /* margem igual ao container fluid pra nao sobrar as bordas*/
   margin-right: -15px;
