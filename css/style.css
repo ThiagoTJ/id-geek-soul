@@ -1,0 +1,16 @@
+header{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+
+}
+.container-header{
+    width: 300px;
+    height: 50;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
