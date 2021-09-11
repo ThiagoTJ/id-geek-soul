@@ -1,18 +1,18 @@
 #barra-navegacao{
   /* background-image: linear-gradient(to bottom,rgba(140, 150, 55, 0.857),rgb(59, 150, 89)); */
-  background-image: linear-gradient(to bottom,#5d645b,rgba(233, 36, 36, 0.96));
+  background-image: linear-gradient(to bottom,#5d645b,rgba(233, 36, 36, 0.959));
   /* box-shadow: 0 0 5px 1px rgba(140,150,55,0.857); */
   font-size: large;
   z-index: 50;
-  
+  height: auto;
 }
 
 /* header */
 #cabecalho{
   height: 27vh;
   background-image: linear-gradient(to bottom,#5d645b,rgba(233, 36, 36, 0.96));
-  
 }
+
 
 /* a implementar*/
 #darkmode{
@@ -84,15 +84,8 @@ transform: scale(1.20);
 } */
 /* MAIN */
 #principal{
-  background-image: linear-gradient(to bottom,#a8a082, rgba(165, 158, 103, 0.629));
+  background-image: linear-gradient(to top,#dfddd9, rgba(165, 158, 103, 0.629));
 }
-/* quando envia o formulario */
-#principal_formulario_ok{
-  height: 70vh;
-  background-image: linear-gradient(to bottom,#f74d47, rgba(197, 186, 103, 0.808));
-}
-
-
 
 /* FOOTER */
 #rodape{
@@ -124,3 +117,14 @@ ul li:hover{
   
   background-color: #f7f3e536;
 }
+
+/* medias querys */
+
+
+@media (min-width:300px) and (max-width: 988.98px){ 
+  #img-logo{
+    width: 100%;
+  }
+ }
+
+
