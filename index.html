@@ -25,7 +25,7 @@
   <section class="container-fluid">
     <!-- ########### cabecalho ###################### -->
     <!--############## barra de navegacao  #############  -->
-    <div class="row bg-secondary">
+    <div id="cabecalho" class="row">
       <nav id="barra-navegacao" class="navbar navbar-expand-lg text-center">
         <!-- NAV-EXPAND-LG  , PARA TELAS GRANDES EXPANDE O MENU, PORQUE BOOTSTRAP E "MOBILE FIRST"-->
         <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
@@ -57,13 +57,12 @@
               <a class="nav-link  text-white" href="#"><i
                   class="bi bi-building text-warning mr-1"></i>Parceiros</a>
             </li>
-
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle  text-white" href="#" id="navbarDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Produtos
               </a>
-             </li>
+             </li> -->
             <!-- suporte -->
             <li class="nav-item">
               <a class="nav-link  text-white" href="#"><i
@@ -97,12 +96,11 @@
           </article>
         </section>
         <!-- FIm secoes do texto -->
-        <!-- CARDS  -->
-        <div class="row col-12 bg-warning">
-        </div><!-- row-->
-
-        <!-- FIM CARDS -->
-
+        <div class="col-5 p-5 text-white">Progresso
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+        </div>
+      </div>
         <!-- mapa do google -->
         <div id="mapa" class="container-fluid col-12">
           <iframe
@@ -116,6 +114,7 @@
         </div>
       </main>
       <!-- ################# FIM MAIN ################################-->
+      <!-- ################# A SIDE ########################## -->
       <aside id="lateral" class="col-md-3">
         <!-- video1 -->
         <div class="d-flex bg-success">
