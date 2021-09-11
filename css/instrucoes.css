@@ -1,3 +1,49 @@
-.container-1{
-    width: 100%,
+.owl-prev{
+    left: 10px;
+}
+.owl-next{
+    right: 10px;
+}
+.owl-prev, .owl-next{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.owl-prev:hover, .owl-prev:active, .owl-prev:focus, .owl-next:hover, .owl-next:active, .owl-next:focus{outline: 0;}
+.owl-prev span, .owl-next span{
+    font-size: 60px;
+    color: #4DC7A0;
+    text-shadow: 1px 1px 5px #999;
+}
+.owl-theme .owl-nav [class*='owl']:hover{
+    background-color: transparent;
+}
+.owl-dots{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.owl-dot:hover, .owl-dot:active, .owl-dot:focus{
+    outline: 0;
+}
+.item-body{
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #4DC7A0;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.item-body h5, .item-body p {
+    margin: 0;
 }
