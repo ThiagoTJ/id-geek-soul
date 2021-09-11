@@ -28,7 +28,10 @@
 html {
   scroll-behavior: smooth;
 }
-
+#home:hover{
+  color:yellow;
+  z-index: 50;
+}
 .ImgFooter{ /* img dos logos redes sociais*/
   height: 2vw;
   margin-left: 2vw;
