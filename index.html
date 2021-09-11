@@ -24,23 +24,9 @@
 <body>
   <section class="container-fluid">
     <!-- ########### cabecalho ###################### -->
-    <header id="cabecalho" class="row">
-      <!-- brocolis logo,com nav BRAND -->
-      <a class="navbar-brand" href="index.html">logo</a>
-      <!--  logo -->
-      
-      <!-- darkmode icone -->
-      <div>
-        <span id="darkmode" alt="dark mode">
-          <i class="bi bi-moon-fill"></i>
-        </span>
-      </div>
-      <!-- h1 header -->
-
-    </header>
     <!--############## barra de navegacao  #############  -->
-    <div class="row">
-      <nav id="barra-navegacao" class="navbar navbar-expand-lg col-12 ">
+    <div class="row bg-secondary">
+      <nav id="barra-navegacao" class="navbar navbar-expand-lg text-center">
         <!-- NAV-EXPAND-LG  , PARA TELAS GRANDES EXPANDE O MENU, PORQUE BOOTSTRAP E "MOBILE FIRST"-->
         <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
         <!-- botao hamburguer -->
@@ -51,7 +37,7 @@
           <span class="navbar-toggler-icon"><i class="bi bi-list text-white"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav flex-column mr-auto">
             <li class="nav-item active">
 
               <!-- <img src="./imagens/house-door-fill.svg" alt="Home"> -->
@@ -77,15 +63,7 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Produtos
               </a>
-              <div id="dropdown_items" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Verduras</a>
-                <a class="dropdown-item" href="#">Frutas</a>
-                <a class="dropdown-item" href="#">Hortaliças</a>
-                <a class="dropdown-item" href="#">Sucos</a> <!-- exemplo-->
-                <!-- <div class="dropdown-divider"></div> -->
-
-              </div><!-- div dropdown menu-->
-            </li>
+             </li>
             <!-- suporte -->
             <li class="nav-item">
               <a class="nav-link  text-white" href="#"><i
@@ -93,17 +71,7 @@
             </li>
 
           </ul>
-          <!-- formul de peesquisa -->
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-warning my-2 my-sm-0" type="submit">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                viewBox="0 0 16 16">
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-              </svg>
-            </button>
-          </form>
+ 
         </div>
       </nav>
       <!-- ############### FIM BARRA DE NAVEGACAO ############################-->
@@ -112,7 +80,6 @@
     <div class="row">
       <!--################ MAIN  principal ###########################-->
       <main id="principal" class="col">
-
         <!-- texto sobre -->
         <section class="col">
           <article class="col text-justify my-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo consequuntur minus saepe nam culpa vero, adipisci eligendi perferendis quibusdam pariatur exercitationem quae et ducimus unde ipsum ipsa autem nobis. Quo.0
@@ -131,10 +98,7 @@
         </section>
         <!-- FIm secoes do texto -->
         <!-- CARDS  -->
-        <div class="row col-12">
-          
-          
-      
+        <div class="row col-12 bg-warning">
         </div><!-- row-->
 
         <!-- FIM CARDS -->
@@ -154,20 +118,12 @@
       <!-- ################# FIM MAIN ################################-->
       <aside id="lateral" class="col-md-3">
         <!-- video1 -->
-        <div class="d-flex">
-          <iframe width="220" height="150" src="https://www.youtube.com/embed/GzifafySI-M" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe></li>
-          <p>Que tal aprender umas receitas saudáveis?Clique no video ao lado</p>
+        <div class="d-flex bg-success">
+          
         </div>
         <!-- video 2 -->
-        <div class="d-flex">
-          <iframe width="220" height="150" src="https://www.youtube.com/embed/LONn-MajUWQ" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe></li>
-          <p>Veja como é facil fazer lanche paras as crianças! Clique no video ao lado</p>
+        <div class="d-flex bg-info">
+          
         </div>
    
         <!-- fim videos -->
