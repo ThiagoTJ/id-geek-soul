@@ -1,47 +1,297 @@
 <!DOCTYPE html>
+<!-- gabriel rocha -->
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Index</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+  <!-- ################### boostrap 4.6 ##################-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- #####################boostrap fim ##########-->
+  <!-- CND PARA OS ICONES -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- private CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <title>hackaton</title>
 </head>
 
 <body>
-    <div>
-        <header>
-            <div class='container-header'>
-                <ul>
-                    <li>Serviço</li>
-                    <li>Locais</li>
-                </ul>
-            </div>
-        </header>
-    </div>
-    <div>
+  <section class="container-fluid">
+    <!-- ########### cabecalho ###################### -->
+    <header id="cabecalho" class="row">
+      <!-- brocolis logo,com nav BRAND -->
+      <a class="navbar-brand" href="index.html">logo</a>
+      <!--  logo -->
+      
+      <!-- darkmode icone -->
+      <div>
+        <span id="darkmode" alt="dark mode">
+          <i class="bi bi-moon-fill"></i>
+        </span>
+      </div>
+      <!-- h1 header -->
 
-    </div>
-    <div>
-        <footer>
+    </header>
+    <!--############## barra de navegacao  #############  -->
+    <div class="row">
+      <nav id="barra-navegacao" class="navbar navbar-expand-lg col-12 ">
+        <!-- NAV-EXPAND-LG  , PARA TELAS GRANDES EXPANDE O MENU, PORQUE BOOTSTRAP E "MOBILE FIRST"-->
+        <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
+        <!-- botao hamburguer -->
+        <button id="botao-hamburguer" class="navbar-toggler border-primary" type="button" data-toggle="collapse"
+          data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+          aria-label="Alterna navegação">
+          <!-- icone hamburguer -->
+          <span class="navbar-toggler-icon"><i class="bi bi-list text-white"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
 
-        </footer>
-    </div>
+              <!-- <img src="./imagens/house-door-fill.svg" alt="Home"> -->
+              <a class="nav-link text-white" href="./index.html"><i
+                  class="bi bi-house-door-fill text-warning mr-1"></i>Home <span class="sr-only">(página
+                  atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-white" href="./quemsomos.html"><i
+                  class="bi bi-people-fill  text-warning mr-1"></i>Quem
+                somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-white" href="./cadastro.html"><i
+                  class="bi bi-newspaper text-warning mr-1"></i>Cadastro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-white" href="./parceiros.html"><i
+                  class="bi bi-building text-warning mr-1"></i>Parceiros</a>
+            </li>
 
-    <!-- scripts necessarios em ordem bootstrap 4.6 -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-        crossorigin="anonymous"></script>
-    <!-- fim bootstrap -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  text-white" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Produtos
+              </a>
+              <div id="dropdown_items" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Verduras</a>
+                <a class="dropdown-item" href="#">Frutas</a>
+                <a class="dropdown-item" href="#">Hortaliças</a>
+                <a class="dropdown-item" href="./sucos.html">Sucos</a> <!-- exemplo-->
+                <!-- <div class="dropdown-divider"></div> -->
+
+              </div><!-- div dropdown menu-->
+            </li>
+            <!-- suporte -->
+            <li class="nav-item">
+              <a class="nav-link  text-white" href="./suporte.html"><i
+                  class="bi bi-building text-warning mr-1"></i>Suporte</a>
+            </li>
+
+          </ul>
+          <!-- formul de peesquisa -->
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-warning my-2 my-sm-0" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </nav>
+      <!-- ############### FIM BARRA DE NAVEGACAO ############################-->
+    </div>
+    <!--row-->
+    <div class="row">
+      <!--################ MAIN  principal ###########################-->
+      <main id="principal" class="col">
+
+        <!-- texto sobre -->
+        <section class="col">
+          <article class="col text-justify my-5">Estudos recentes vêm analisando o consumo crescente de alimentos
+            ultraprocessados na alimentação diária, tal análise deve-se ao aumento do número de pessoas com excesso de
+            peso e o desenvolvimento de doenças crônicas não transmissíveis. O aumento da produção e consumo de produtos
+            processados e ultraprocessados como, doces, refrigerantes, produtos com maior densidade energética, ricos em
+            sódio, gorduras, açúcar e pobres em nutrientes vem sendo objeto de vários estudos tanto em caráter nacional
+            quanto internacional. Para tal é importante saber a diferença entre esses alimentos.
+
+          </article>
+          <article class="col text-justify my-5">Estudos recentes vêm analisando o consumo crescente de alimentos
+            ultraprocessados na alimentação diária, tal análise deve-se ao aumento do número de pessoas com excesso de
+            peso e o desenvolvimento de doenças crônicas não transmissíveis. O aumento da produção e consumo de produtos
+            processados e ultraprocessados como, doces, refrigerantes, produtos com maior densidade energética, ricos em
+            sódio, gorduras, açúcar e pobres em nutrientes vem sendo objeto de vários estudos tanto em caráter nacional
+            quanto internacional. Para tal é importante saber a diferença entre esses alimentos.
+
+          </article>
+          <article class="col text-justify my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            doloribus repellendus sequi ipsam cumque sit cupiditate mollitia! Dolore nemo quod mollitia laborum
+            accusantium consequuntur incidunt, quibusdam omnis tempora error voluptatum.
+            Expedita, nemo excepturi numquam voluptates delectus quidem odit reprehenderit obcaecati illum voluptatem.
+            Dolorem quo, corrupti voluptas perferendis excepturi laborum, eveniet ab pariatur suscipit incidunt,
+            officiis ipsam et voluptatum officia. Dicta!
+          </article>
+        </section>
+        <!-- FIm secoes do texto -->
+        <!-- CARDS  -->
+        <div class="row col-12">
+          
+          
+      
+        </div><!-- row-->
+
+        <!-- FIM CARDS -->
+
+        <!-- mapa do google -->
+        <div id="mapa" class="container-fluid col-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2311.672729134053!2d-38.458988584762174!3d-12.987540100382706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b143382b523%3A0xa0ed3971f8aacbfa!2sLoja%20Sangue%20Latino!5e0!3m2!1spt-PT!2sbr!4v1630292481446!5m2!1spt-PT!2sbr"
+            width="100%" height="450" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <!-- icone seta pra cima,inicia Hide,com scroll 400 aparece -->
+        <div> <a href="#cabecalho">
+            <img id="icone_subir" src="./imagens/arrow-up-square.svg" role="img" aria-label="up" alt="ir pro topo">
+          </a>
+        </div>
+      </main>
+      <!-- ################# FIM MAIN ################################-->
+      <aside id="lateral" class="col-md-3">
+        <!-- video1 -->
+        <div class="d-flex">
+          <iframe width="220" height="150" src="https://www.youtube.com/embed/GzifafySI-M" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe></li>
+          <p>Que tal aprender umas receitas saudáveis?Clique no video ao lado</p>
+        </div>
+        <!-- video 2 -->
+        <div class="d-flex">
+          <iframe width="220" height="150" src="https://www.youtube.com/embed/LONn-MajUWQ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe></li>
+          <p>Veja como é facil fazer lanche paras as crianças! Clique no video ao lado</p>
+        </div>
+   
+        <!-- fim videos -->
+      </aside>
+
+    </div><!-- row MAIN e ASIDE-->
+
+
+
+    <!-- Conteiner final, direitos autorais, links de acesso as redes sociais e ícone para voltar ao topo -->
+    <footer id="rodape">
+      <div>
+        <a href="https://www.facebook.com/soulnatura" target="_blanck">
+          <img class="ImgFooter" src="./imagens/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/soulnatura/" target="_blanck">
+          <img class="ImgFooter" src="./imagens/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.youtube.com/soulnatura" target="_blanck">
+          <img class="ImgFooter" src="./imagens/youtube.png" alt="YouTube"></a>
+      </div>
+      <div class="copyright">© Copyright Soul CodeHackaton 2021</div>
+      <div class="copyright">Contato: (71)-1234-45654</div>
+    </footer>
+
+  </section><!-- container-fluid-->
+  <!-- scripts necessarios em ordem bootstrap 4.6 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <!-- fim bootstrap -->
+  <!-- script do requisito scroll -->
+  <script>
+    $(document).ready(function () {
+
+
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 100) {
+          $("#icone_subir").css("display", "block");
+        } else {
+          $("#icone_subir").css("display", "none");
+        }
+      });
+      //fim scroll
+
+      //smooth scrool  
+      // Add smooth scrolling to all links
+      $("#icone_subir a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 1200, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });//icone subir click
+
+      // darkmode
+      var dark_mode = 0;
+      $("#darkmode").click(function () {
+        if (dark_mode == 0) {
+          $("main").css("background-image", "linear-gradient(#0E2F59, #36486d)");
+          $("main").css("color", "grey");
+          $("#barra-navegacao").css("background-image", "linear-gradient(#0E2F59, #36486d)");
+          $("#lateral").css("background-image", "linear-gradient(#0E2F59, #36486d)");
+          $("#lateral p").css("color", "grey");
+          $(".copyright").css("color", "lightgrey");
+          $(".card").addClass("bg-secondary").addClass("text-white");
+          $("header").css("background-image", "linear-gradient(#0E2F59, #36486d)");
+          $("footer").css("background-image", "linear-gradient(#0E2F59, #36486d)");
+          dark_mode = 1;
+
+        }
+        else {
+          $("header").css("background-image", "linear-gradient(to right,#ffe18ed4, #7ec566)");
+          $("main").css("background-image", "linear-gradient(to bottom,#f7f3e5, rgba(255, 225, 0, 0.629))");
+          $("main").css("color", "black");
+          $("#barra-navegacao").css("background-image", "linear-gradient(to bottom,#7ec566,rgba(233, 36, 36, 0.96))");
+          $("#lateral").css("background-image", "inherit");
+          $("#lateral p").css("color", "inherit");
+          $("#rodape").css("background-image", "linear-gradient(#d3ae4854,#d3ae4854)");
+          $(".card").addClass("bg-white").addClass("text-dark");
+          $(".copyright").css("color", "inherit");
+          dark_mode = 0;
+        }
+      });//darkmode
+
+    });//document.ready
+  </script>
+
+  <!-- Libras -->
+  <div id="libras_id" vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
 </body>
 
 </html>
