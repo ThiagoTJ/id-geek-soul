@@ -17,7 +17,9 @@
   background-image: linear-gradient(to bottom,#7ec566,rgba(233, 36, 36, 0.96));
   /* box-shadow: 0 0 5px 1px rgba(140,150,55,0.857); */
   box-shadow: 1px 2px 2px 2px  #ed4d30;
+  font-size: large;
   z-index: 50;
+  
 }
 #bemvindo{
   color:rgba(205, 134, 63, 0.964);
