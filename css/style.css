@@ -5,7 +5,7 @@ font-size: large;
 }
 #barra-navegacao{
   /* background-image: linear-gradient(to bottom,rgba(140, 150, 55, 0.857),rgb(59, 150, 89)); */
-  background-image: linear-gradient(to bottom,#5d645b,rgba(233, 36, 36, 0.959));
+  background-color:rgba(197, 7, 7, 0.829);
   /* box-shadow: 0 0 5px 1px rgba(140,150,55,0.857); */
   font-size: large;
   z-index: 50;
@@ -15,8 +15,8 @@ font-size: large;
 /* header */
 #cabecalho{
   height: 27vh;
-  background-image: linear-gradient(to bottom,#5d645b,rgba(233, 36, 36, 0.96));
-  box-shadow: 0 3px 15px 5px rgb(51, 209, 72);
+  background-color:rgba(189, 8, 8, 0.829);
+  /* box-shadow: 0 3px 15px 5px rgb(51, 209, 72); */
   z-index: 30;
 }
 .card-imagem{
