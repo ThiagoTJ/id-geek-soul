@@ -1,5 +1,5 @@
 $(function(){
-   
+
 //Gabriel 
 $(window).scroll(function(){
     if ($(document).scrollTop() > 100) {
@@ -73,7 +73,6 @@ $('.owl-carousel').owlCarousel({
     animateIn: 'flipInX',
     animateOut: 'zoomOutDown'
 });
-
 $('.owl-carousel').on('mousewheel', 'owl-stage', function (e){
     if(e.deltaY>0) {
         $('.owl-carousel').trigger('next.owl');
