@@ -1,0 +1,189 @@
+body{
+    margin:0px;
+    padding:0px;
+    background: linear-gradient(90deg, rgb(222, 94, 94) 43%, rgb(235, 146, 146) 100%);
+    height: 100%;
+    width: 100%;
+  }
+  .quiz-app{
+    margin: 8px auto;
+    height: 560px;
+    width: 330px;
+    background-color:#0c0c0c;
+    border-style: solid;
+    border-width: 18px;
+    border-color:#0a0a0b;
+    border-radius: 30px;
+  }
+  #equipe{
+    margin-left: 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color:white;
+  }
+  .barra-tempo{
+    margin:30px auto;
+    width: 300px;
+    height:30px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    border-color: #41476A;
+    background-color:#252C4A;
+  }
+  .tempo-restante{
+    width: 300px;
+    height:30px;
+    border-style: none;
+    border-radius: 30px;
+    border-color: rgb(250,81,113);
+    background-color: rgb(250,81,113);
+  }
+  .time{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color:white;
+    text-align: center;
+  }
+  .texto-quest{
+    color:white;
+    text-align: left;
+    margin-left:20px;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+  }
+  #questoes{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    color:white;
+    padding:10px 20px 10px 20px;
+
+  }
+  .btn{
+    width: 250px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    background-color:transparent;
+    color:white;
+    border-color: #254567;
+    outline:none;
+    
+    
+  }
+  .btn:hover{
+    background: linear-gradient(90deg, rgba(250,81,113,1) 46%, 
+    rgba(250,81,113,1) 50%, rgba(37,44,74,1) 100%);
+    
+  }
+  #proximoBtn{
+    padding: 15px 40px 15px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    background-color:#d05355;
+    color:white;
+    border-color: #d05355;
+    margin-left: 100px;
+    margin-top: 10px;
+    outline:none;
+
+
+  }
+  #proximoBtn:hover{
+    background-color: white;
+    color:#f4a7a6;
+    border-color:white;
+  }
+  #linha{
+    color:white;
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+  .gifImagen{
+    color:white;
+    margin-top:50px;
+    margin-left: 20px;
+  }
+  .app{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    color:white;
+    text-align: center;
+  }
+
+  .btn-popup{
+    display:block;
+    margin: 20px auto;
+    background: #f4a7a6 ;
+    color:white;
+    border:0;
+    cursor:pointer;
+    padding:6px 10px
+  }
+
+  .popup-wrapper{
+    /* display:none; */
+    background: rgba(0,0,0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .popup {
+    margin-top: 30px;
+    font-family: arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin:10% auto;
+    background-color: white;
+    position: relative;
+  }
+
+  .popup a {
+    color:white;
+    border:0;
+    cursor:pointer;
+    padding:0px 10px;
+    text-decoration: none;
+    background: #f4a7a6;
+  }
+
+  .popup-close {
+    position: absolute;
+    top:5px;
+    right:10px;
+    cursor:pointer;
+  }
+  
+
+  @media (max-width: 600px) {
+    
+  .popup {
+    margin-top: 200px;
+    font-family: arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    background-color: white;
+    position: relative;
+  }
+
+  }
+
