@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <!-- private CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- script.js Jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/scripts.js" ></script>
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
@@ -69,52 +72,45 @@
     <div class="row">
       <!--################ MAIN  principal ###########################-->
       <main id="principal" class="col">
-        <h1 class="display-3 text-center">Bem vindo(a) ao jogo</h1>
-        <!-- texto sobre -->
+        <h1 class="text-center">Bem vindo(a) ao jogo</h1>
+        <!--###########  texto sobre jogo-->
         <section class="col">
-          <article class="col text-justify my-5">Com o objetivo de conscientizar as pessoas da importância ambiental, social e  empresarial, o descarte de seus produtos retornáveis, a Empresa Soul Geek lança um Desafio. Loorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
-            consequuntur minus saepe nam culpa vero, adipisci eligendi perferendis quibusdam pariatur exercitationem
-            quae et ducimus unde ipsum ipsa autem nobis. Quo.0
-
+          <article id="artigo_principal" class="col text-justify my-5"> 
+           <p> 1 - Você sabe o que é sustentabilidade e ASG? Caso não, clique no card "Sobre"!</p>
+           <p> 2 - Agora que você conhece a sustentabilidade e o ASG, clique no card "Jogar"!</p>
+            <p>3 - Nosso quiz-game possui 10 questões sobre sustentabilidade e ASG</p>
+            <p>4 - As perguntas aumentam de dificuldade a cada nível, então mantenha-se informado!</p>
+            <p>5 - Para concluir um nível, você precisará acertar no mínimo 8 questões.</p>
+            <p>6 - Para subir de nível, você precisará:</p>
+            <p>6.1 -Realizar um descarte de material reciclável no ponto mais próximo da Soul Geek.</p>
+            <p>6.2 -Pesar e computar o conteúdo a ser descartado, gerando um código único.</p>
+            <p>6.2 -Inserir o código na sua conta da SoulGeek.</p>
+            <p>8 - O próximo nível será liberado, e serão depositadas moedas virtuais em sua conta.</p>
+            <p>9 - Juntando certa quantidade de moedas, você poderá converte-las em descontos em compras do (nome_site).</p>
+            <p>10 - Não é incrível? Você se torna um cidadão consciente e ainda é premiado por isso!</p>
           </article>
-          <article class="col text-justify my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            deleniti vel ipsum sint numquam laudantium, cupiditate architecto quibusdam similique ipsa.
-
-          </article>
-          <article class="col text-justify my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            doloribus repellendus sequi ipsam cumque sit cupiditate mollitia! Dolore nemo quod mollitia laborum
-            accusantium consequuntur incidunt, quibusdam omnis tempora error voluptatum.
-            Expedita, nemo excepturi numquam voluptates delectus quidem odit reprehenderit obcaecati illum voluptatem.
-            Dolorem quo, corrupti voluptas perferendis excepturi laborum, eveniet ab pariatur suscipit incidunt,
-            officiis ipsam et voluptatum officia. Dicta!
-          </article>
+        
         </section>
         <div class="row mb-5 mt-3">
           <!-- #### card 1 -->
-          <div class="card m-auto shadow-lg div_img" style="width: 18rem;">
+          <div class="card m-auto shadow-lg div_img " style="width: 18rem;">
             <img src="./img/texaid-container-sammlung.png" class="card-img-top card-imagem" alt="...">
             <div class="card-body m-auto">
-              <h5 class="card-title">Instruções</h5>
-              <p class="card-text">Clique para instruções</p>
-              <a href="./pages/instrucoes.html" class="btn btn-secondary stretched-link">CLICK</a>
+              <a href="./pages/instrucoes.html" class="btn btn-secondary stretched-link">Instruções</a>
             </div>
           </div>
           <!-- ##### card 2 -->
-          <div class="card m-auto shadow-lg div_img" style="width: 18rem;">
-            <img src="./img/play-button.jpg" class="card-img-top card-imagem shadow" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">JOGAR</h5>
-              <p class="card-text">Clique para jogar</p>
-              <a href="#" class="btn btn-secondary stretched-link">CLICK</a>
+          <div class="card m-auto shadow-lg div_img " style="width: 18rem;">
+            <img src="./img/play-button.jpg" class="card-img-top card-imagem" alt="...">
+            <div class="card-body m-auto">
+              <a href="./pages/instrucoes.html" class="btn btn-secondary stretched-link">Jogar</a>
             </div>
           </div>
           <!-- ##### card 3 -->
           <div class="card m-auto shadow-lg div_img" style="width: 18rem;">
             <img src="./img/texaid-unterflur-container-sammlung.png" class="card-img-top card-imagem" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Clique para Sobre nós</h5>
-              <p class="card-text">Clique para saber mais sobre Nós</p>
-              <a href="./pages/sobre.html" class="btn btn-secondary stretched-link">CLICK</a>
+            <div class="card-body m-auto">
+            <a href="./pages/sobre.html" class="btn btn-secondary stretched-link">Saiba mais</a>
             </div>
           </div>
 
@@ -126,21 +122,7 @@
       </a>
     </div>
     </main>
-    <!-- ################# FIM MAIN ################################-->
-    <!-- ################# A SIDE ########################## -->
-    <!-- <aside id="lateral" class="col-md-2"> -->
-      <!-- video1 -->
-      <!-- <div class="d-flex bg-success m-auto">
-        lateral1
-      </div> -->
-      <!-- video 2 -->
-      <!-- <div class="d-flex bg-info m-auto">
-        lateral2
-      </div>
-
-    </aside> -->
-
-    </div><!-- row MAIN e ASIDE-->
+     </div><!-- row MAIN e ASIDE-->
     <!-- ######### rodape #################### -->
     <footer id="rodape" class="fixed-bottom">
       <div>
@@ -168,75 +150,6 @@
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
   <!-- fim bootstrap -->
-  <!-- INICIO SCRIPTS -->
-  <script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        if ($(document).scrollTop() > 100) {
-          $("#icone_subir").css("display", "block");
-        } else {
-          $("#icone_subir").css("display", "none");
-        }
-      });
-      //fim scroll
-
-      //smooth scrool  
-      // Add smooth scrolling to all links
-      $("#icone_subir a").on('click', function (event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 1200, function () {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });//icone subir click
-
-      // darkmode
-      var dark_mode = 0;
-      $("#darkmode").click(function () {
-        if (dark_mode == 0) {
-          $("main").css("background-image", "linear-gradient(#0E2F59, #36486d)");
-          $("main").css("color", "grey");
-          $("#barra-navegacao").css("background-image", "linear-gradient(#0E2F59, #36486d)");
-          $("#lateral").css("background-image", "linear-gradient(#0E2F59, #36486d)");
-          $("#lateral p").css("color", "grey");
-          $(".copyright").css("color", "lightgrey");
-          $(".card").addClass("bg-secondary").addClass("text-white");
-          $("header").css("background-image", "linear-gradient(#0E2F59, #36486d)");
-          $("footer").css("background-image", "linear-gradient(#0E2F59, #36486d)");
-          dark_mode = 1;
-
-        }
-        else {
-          $("header").css("background-image", "linear-gradient(to right,#ffe18ed4, #7ec566)");
-          $("main").css("background-image", "linear-gradient(to bottom,#f7f3e5, rgba(255, 225, 0, 0.629))");
-          $("main").css("color", "black");
-          $("#barra-navegacao").css("background-image", "linear-gradient(to bottom,#7ec566,rgba(233, 36, 36, 0.96))");
-          $("#lateral").css("background-image", "inherit");
-          $("#lateral p").css("color", "inherit");
-          $("#rodape").css("background-image", "linear-gradient(#d3ae4854,#d3ae4854)");
-          $(".card").addClass("bg-white").addClass("text-dark");
-          $(".copyright").css("color", "inherit");
-          dark_mode = 0;
-        }
-      });//darkmode
-
-    });//document.ready
-  </script>
-
   <!-- Libras -->
   <div id="libras_id" vw class="enabled">
     <div vw-access-button class="active"></div>
