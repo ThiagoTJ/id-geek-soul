@@ -15,7 +15,8 @@ var opt2=document.getElementById('opt2');
 var opt3=document.getElementById('opt3');
 var opt4=document.getElementById('opt4');
 var btn=document.getElementsByClassName('btn');
-var proximoBtn=document.getElementById('proximoBtn');
+const btnComecar = document.getElementById('btnComecar');
+
 var perguntasDoQuiz=[
     {
     questoes:"pergunta 1 ",
@@ -109,15 +110,24 @@ opt2.textContent=perguntasDoQuiz[no].opc2;
 opt3.textContent=perguntasDoQuiz[no].opc3;
 opt4.textContent=perguntasDoQuiz[no].opc4;
 }
-var z=setInterval(function(){
-    if(x==1){
-        clearInterval(z);
-        telaInicial.style.display="none";
-        quizTeste.style.display="block";
-        proximoQuiz(questoesJogo);
-    }
-    x++;
-},2000);
+// var intervaloContagem=setInterval(function(){
+//     if(repeticao==1){
+//         clearInterval(intervaloContagem);
+//         telaInicial.style.display="none";
+//         quizTeste.style.display="block";
+//         proximoQuiz(questoesJogo);
+//     }
+//     repeticao++;
+// },2000);
+btnComecar.addEventListener('click', () => {
+    comecar()
+})
+function comecar(){
+    
+    telaInicial.style.display="none";
+    quizTeste.style.display="block";
+    proximoQuiz(questoesJogo);
+}
 
 
 for(var i=0;i<btn.length;i++){
