@@ -11,8 +11,18 @@
 #cabecalho{
   height: 27vh;
   background-image: linear-gradient(to bottom,#5d645b,rgba(233, 36, 36, 0.96));
+  box-shadow: 0 3px 15px 5px rgb(51, 209, 72);
+  z-index: 30;
 }
+.card-imagem{
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+#cards-coluna a:hover{
+  box-shadow: 0 0 5px 5px rgba(255, 15, 15, 0.767);
 
+
+}
 
 /* a implementar*/
 #darkmode{
@@ -47,19 +57,16 @@ html {
   display: none; 
   position: fixed;
   top: 70%;
-  right:8%;
-  background-color: rgb(109, 186, 189);
-  border-radius: 10%;
+  right:3%;
+  
+  border-radius: 30%;
   height:3%;
   width: auto;
 }
 #icone_subir:hover{
-  background-color: rgba(128, 255, 0, 0.823);
-}
-#lateral{
-  background-color: #f0e9d194;
-  box-shadow: -2px 0 2px 2px grey;
-  z-index: -1; /* o z index negativo fez um efeito transparente na borda do aside*/
+  background-color: rgba(247, 29, 13, 0.849);
+  box-shadow: 0 0 5px 5px rgba(255, 0, 0, 0.774);
+  border-radius: 30%;
 }
 
 #libras_id{
@@ -84,7 +91,7 @@ transform: scale(1.20);
 } */
 /* MAIN */
 #principal{
-  background-image: linear-gradient(to top,#dfddd9, rgba(165, 158, 103, 0.629));
+  background-image: linear-gradient(to top,#dfddd9, rgba(165, 158, 103, 0.629),#dfddd9);
 }
 
 /* FOOTER */
@@ -94,11 +101,12 @@ transform: scale(1.20);
   flex-wrap: nowrap;
   position: relative;
   font-size: larger;
-  background-image: linear-gradient(to bottom,#5d645b,rgba(233, 36, 36, 0.96));
+  background-image: linear-gradient(to bottom,rgba(233, 36, 36, 0.76),#1b1b1a,rgba(233, 36, 36, 0.96));
   bottom:0;
   width: auto;
-  color: #f7f3e5;
   height: 8vh;
+  color: #f7f3e5;
+  
   margin-left: -15px; /* margem igual ao container fluid pra nao sobrar as bordas*/
   margin-right: -15px;
  
@@ -106,6 +114,10 @@ transform: scale(1.20);
   align-items: center;
   padding: 1vw;
   
+}
+/* filtra os icones do rodape */
+#rodape img{
+  filter: invert(100%);
 }
 
 /* imagens das redes sosicias*/
@@ -124,7 +136,41 @@ ul li:hover{
 @media (min-width:300px) and (max-width: 988.98px){ 
   #img-logo{
     width: 100%;
+    
   }
+  #barra-navegacao{
+    background-image: linear-gradient(to bottom,#5d645b,rgba(194, 41, 41, 0));
+  }
+  .ImgFooter{
+    width: 3vw;
+    height: 3vh;
+    margin: 18px ;
+  }
+
+ } /* media 300-988*/
+
+ @media (min-width:200px) and (max-width: 668px){ 
+  #barra-navegacao{
+    background-image: linear-gradient(to bottom,#5d645b,rgba(194, 41, 41, 0));
+  }
+  #img-logo{
+    width: 100%;
+    
+  }
+  .ImgFooter{
+    width: 3vw;
+    height: 3vh;
+    margin: 18px ;
+  }
+  #rodape{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 16vh;
+  }
+
+
+ /*media 200 - 576  */
  }
 
 
