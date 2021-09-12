@@ -14,7 +14,7 @@
 .owl-prev:hover, .owl-prev:active, .owl-prev:focus, .owl-next:hover, .owl-next:active, .owl-next:focus{outline: 0;}
 .owl-prev span, .owl-next span{
     font-size: 60px;
-    color: #4DC7A0;
+    color: #e92424f5;
     text-shadow: 1px 1px 5px #999;
 }
 .owl-theme .owl-nav [class*='owl']:hover{
@@ -39,7 +39,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: #4DC7A0;
+    background-color: #e92424d5;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
