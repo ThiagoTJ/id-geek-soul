@@ -130,9 +130,9 @@ ul li:hover{
 /* medias querys */
 @media (min-width:300px) and (max-width: 988.98px){ 
  
-  #barra-navegacao{
+  /* #barra-navegacao{
     background-image: linear-gradient(to bottom,#5d645b,rgba(194, 41, 41, 0));
-  }
+  } */
   .ImgFooter{
     width: 3vw;
     height: 3vh;
@@ -142,9 +142,9 @@ ul li:hover{
  } /* media 300-988*/
 
  @media (min-width:200px) and (max-width: 668px){ 
-  #barra-navegacao{
+  /* #barra-navegacao{
     background-image: linear-gradient(to bottom,#5d645b,rgba(194, 41, 41, 0));
-  }
+  } */
  
 
   .ImgFooter{

@@ -1,8 +1,8 @@
-body{
+/* body{
     background: linear-gradient(90deg, rgb(222, 94, 94) 43%, rgb(235, 146, 146) 100%);
-    /* height: 100%; */
-    /* width: 100%; */
-  }
+    height: 100%;
+    width: 100%;
+  } */
   .quiz-app{
     margin: 8px auto;
     height: 560px;
