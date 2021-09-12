@@ -16,7 +16,6 @@ font-size: large;
 #cabecalho{
   height: 27vh;
   background-image: linear-gradient(to bottom,#5d645b,rgba(233, 36, 36, 0.96));
-  box-shadow: 0 3px 15px 5px rgb(51, 209, 72);
   z-index: 30;
 }
 .card-imagem{
@@ -55,10 +54,6 @@ html,body{
   margin-left: 2vw;
   border-radius: 15%;
 }
-.imagens_prod{
-  width: 90%;
-    
-}
 
 #icone_subir{
   /* comeca escondido*/
@@ -82,10 +77,7 @@ html,body{
   top:80%;
   right:2%;
 }
-#logo-brocolis{
-  height: 80%;
-  
-}
+
 #mapa{
   width: 100%;
   margin-top: 50px;
@@ -98,7 +90,7 @@ transform: scale(1.20);
 } */
 /* MAIN */
 #principal{
-  background-image: linear-gradient(to top,#dfddd9, rgba(165, 158, 103, 0.629),#dfddd9);
+  background-image: linear-gradient(to top,#dfddd9, rgba(165, 161, 131, 0.629),#dfddd9);
 }
 
 /* FOOTER */
