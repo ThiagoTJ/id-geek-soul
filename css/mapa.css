@@ -1,0 +1,22 @@
+#map {
+  height: 600px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.titulo{
+  font-size: 40px;
+  font-weight: bold;
+  color:#fff;
+  text-align: center;
+  border-bottom: 2px dashed #000;
+  border-top: 2px dashed #000;
+}
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
