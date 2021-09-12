@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+  <!-- ################### boostrap 4.6 ##################-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- #####################boostrap fim ##########-->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-sobre.css">
+  <title>Soul Geek</title>
+</head>
+
+<body>
+    <section class="container-fluid">
+      <!-- ########### cabecalho ###################### -->
+      <!--############## barra de navegacao  #############  -->
+      <div id="cabecalho" class="row">
+        <nav id="barra-navegacao" class="navbar navbar-expand-lg">
+          <!-- NAV-EXPAND-LG  , PARA TELAS GRANDES EXPANDE O MENU, PORQUE BOOTSTRAP E "MOBILE FIRST"-->
+          <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
+          <!-- botao hamburguer -->
+          <button id="botao-hamburguer" class="navbar-toggler border-primary" type="button" data-toggle="collapse"
+            data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+            aria-label="Alterna navegação">
+            <!-- icone hamburguer -->
+            <span class="navbar-toggler-icon"><i class="bi bi-list text-white"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav flex-column mr-auto">
+              <li class="nav-item active">
+  
+                <!-- <img src="./imagens/house-door-fill.svg" alt="Home"> -->
+                <a class="nav-link text-white" href="../index.html"><i class="bi bi-house-door-fill mr-1"></i>Home <span
+                    class="sr-only">(página
+                    atual)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-white" href="#locaisdecoleta.html">
+                  <i class="bi bi-gear-fill  mr-1"></i>Locais de coleta
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-white" href="#servicos.html"><i class="bi bi-newspaper mr-1"></i>Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-white" href="#parceiros.html"><i class="bi bi-building  mr-1"></i>Parceiros</a>
+              </li>
+            </ul>
+  
+          </div>
+        </nav>
+        <!-- ############### FIM BARRA DE NAVEGACAO ############################-->
+        <!-- ############### imagem  LOGO ##################################-->
+        <div class="d-flex m-auto">
+          <img id="img-logo" class="img img-fluid" src="../img/recycling-icone.png"  alt="imagem ilustrativa apenas">
+        </div>
+  
+      </div>
+
+        <main>
+            <section>
+                <!-- Título da página-->
+                <header id="titulo-sobre" class="col">
+                    <p>Conhecendo o ASG!</p>
+                </header>
+        
+                <!-- Vídeo sobre ESG-->
+                <div id="video-esg">
+                    <iframe width="540" height="360" src="https://www.youtube.com/embed/TEGRmVKt3DE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+        
+                <!-- Texto sobre ESG-->
+                <article class="col text-justify my-5">
+                    <p id="texto-esg">Sustentabilidade é o termo utilizado para representar o comprometimento com a preservação da natureza, frente as necessidades contemporâneas. Em meio há um mundo cada vez mais tecnológico, são gerados diversos tipos de resíduos poluentes. E pensar na administração e no desenvolvimento com um olhar voltado para a sustentabilidade, contribui para uma grande redução nos danos causados ao meio ambiente promovendo melhor qualidade de vida.</p>
+                    <p id="texto-esg">O tema é extremamente bem visto pela sociedade, e tem se tornado cada vez mais desejável para organizações que buscam demonstrar sua preocupação em não simplesmente lucrar, mas sim produzir de forma responsável. Dessa atitude, originou-se um movimento que ganhou força e culminou no surgimento do ASG, sigla para Ambiental, Social e Governaça, também conhecida internacionalmente por ESG (Environmental, Social, Governance).</p>
+                    <p id="texto-esg">O ASG baseia-se nesses três pilares afim de definir um conjunto de padrões e procedimentos que visam guiar as corporações à boas práticas administrativas. Serve também como métrica para medir seu nível de sustentabilidade e responsabilidade para com a natureza. Uma empresa que se enquadre nos quesitos ASG é considarada consciente e viável para a realização de investimentos sustentáveis capazes de promover impacto social e ambiental.</p>
+                </article>
+            </section> 
+        </main>
+      <!-- ######### rodape #################### -->
+      <footer id="rodape" class="fixed-bottom">
+        <div>
+          <a href="#" target="_blanck">
+            <img class="ImgFooter" src="../img/facebook.png" alt="facebook"></a>
+          <a href="#" target="_blanck">
+            <img class="ImgFooter" src="../img/instagram.png" alt="Instagram"></a>
+          <a href="#" target="_blanck">
+            <img class="ImgFooter" src="../img/youtube.png" alt="YouTube"></a>
+        </div>
+        
+        <div class="copyright"><strong> © Copyright Soul Geek 2021</strong></div>
+        <div class="copyright">Contato: (71)-1234-45654</div>
+      </footer>
+  
+    </section><!-- container-fluid-->
+    <!-- scripts necessarios em ordem bootstrap 4.6 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"></script>
+    <!-- fim bootstrap -->
+    <!-- INICIO SCRIPTS -->
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(document).scrollTop() > 100) {
+            $("#icone_subir").css("display", "block");
+          } else {
+            $("#icone_subir").css("display", "none");
+          }
+        });
+        //fim scroll
+  
+        //smooth scrool  
+        // Add smooth scrolling to all links
+        $("#icone_subir a").on('click', function (event) {
+  
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+  
+            // Store hash
+            var hash = this.hash;
+  
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 1200, function () {
+  
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });//icone subir click
+  
+        // darkmode
+        var dark_mode = 0;
+        $("#darkmode").click(function () {
+          if (dark_mode == 0) {
+            $("main").css("background-image", "linear-gradient(#0E2F59, #36486d)");
+            $("main").css("color", "grey");
+            $("#barra-navegacao").css("background-image", "linear-gradient(#0E2F59, #36486d)");
+            $("#lateral").css("background-image", "linear-gradient(#0E2F59, #36486d)");
+            $("#lateral p").css("color", "grey");
+            $(".copyright").css("color", "lightgrey");
+            $(".card").addClass("bg-secondary").addClass("text-white");
+            $("header").css("background-image", "linear-gradient(#0E2F59, #36486d)");
+            $("footer").css("background-image", "linear-gradient(#0E2F59, #36486d)");
+            dark_mode = 1;
+  
+          }
+          else {
+            $("header").css("background-image", "linear-gradient(to right,#ffe18ed4, #7ec566)");
+            $("main").css("background-image", "linear-gradient(to bottom,#f7f3e5, rgba(255, 225, 0, 0.629))");
+            $("main").css("color", "black");
+            $("#barra-navegacao").css("background-image", "linear-gradient(to bottom,#7ec566,rgba(233, 36, 36, 0.96))");
+            $("#lateral").css("background-image", "inherit");
+            $("#lateral p").css("color", "inherit");
+            $("#rodape").css("background-image", "linear-gradient(#d3ae4854,#d3ae4854)");
+            $(".card").addClass("bg-white").addClass("text-dark");
+            $(".copyright").css("color", "inherit");
+            dark_mode = 0;
+          }
+        });//darkmode
+  
+      });//document.ready
+    </script>
+  
+    <!-- Libras -->
+    <div id="libras_id" vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+  </body>
+
+</html>
