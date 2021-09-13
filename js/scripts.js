@@ -1,5 +1,5 @@
 $(function(){
-
+  
 //Gabriel 
 $(window).scroll(function(){
     if ($(document).scrollTop() > 100) {
