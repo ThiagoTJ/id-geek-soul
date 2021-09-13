@@ -126,7 +126,7 @@ for (var i = 0; i < btn.length; i++) {
     btn[i].onclick = function () {
     if (this.textContent == perguntasDoQuiz[questoesJogo].ans) {
         totalScore++;
-        if (questoesJogo < 4) {
+        if (questoesJogo < 9) {
         clearInterval(tempoContagem);
         questoesJogo++;
         proximoQuiz(questoesJogo);
