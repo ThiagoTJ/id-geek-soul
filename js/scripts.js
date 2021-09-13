@@ -1,7 +1,7 @@
-$(function(){
-  
-//Gabriel 
-$(window).scroll(function(){
+$(function () {
+
+  //Gabriel 
+  $(window).scroll(function () {
     if ($(document).scrollTop() > 100) {
       $("#icone_subir").css("display", "block");
     } else {
@@ -30,26 +30,26 @@ $(window).scroll(function(){
     } // End if
   });//icone subir click
 
-//codigo carroulsel
-$('.owl-carousel').owlCarousel({
+  //codigo carroulsel
+  $('.owl-carousel').owlCarousel({
     autoplay: true,
     autoplayHoverPause: true,
-    items:1,
+    items: 1,
     smartSpeed: 450,
     nav: true,
     dots: true,
     loop: true,
     animateIn: 'flipInX',
     animateOut: 'zoomOutDown'
-});
-$('.owl-carousel').on('mousewheel', 'owl-stage', function (e){
-    if(e.deltaY>0) {
-        $('.owl-carousel').trigger('next.owl');
-    }else{
-        $('.owl-carousel').trigger('prev-owl');
+  });
+  $('.owl-carousel').on('mousewheel', 'owl-stage', function (e) {
+    if (e.deltaY > 0) {
+      $('.owl-carousel').trigger('next.owl');
+    } else {
+      $('.owl-carousel').trigger('prev-owl');
     }
     e.preventDefault();
-});
+  });
 
 
 
