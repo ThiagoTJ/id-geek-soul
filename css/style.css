@@ -15,13 +15,12 @@ font-size: large;
 /* header */
 #cabecalho{
   height: 27vh;
-
-  background-color:rgba(189, 8, 8, 0.829);
+  background-color:#C83333;
   /* box-shadow: 0 3px 15px 5px rgb(51, 209, 72); */
   z-index: 30;
 }
 .card-imagem{
-   background-color: #aba7a838;
+  background-color: #aba7a838;
 }
 
 /* a implementar*/
@@ -102,7 +101,7 @@ transform: scale(1.20);
   position: relative;
   font-size: larger;
   /* background-image: linear-gradient(to bottom,rgba(233, 36, 36, 0.76),#1b1b1a,rgba(233, 36, 36, 0.96)); */
-  background-color: rgba(19, 19, 19, 0.897);
+  background-color:#2B2B2B;
   bottom:0;
   width: auto;
   height: 8vh;

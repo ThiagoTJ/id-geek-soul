@@ -177,7 +177,7 @@ proximoBtn.onclick = function () {
     if (questoesJogo < 9) {
     questoesJogo++;
     proximoQuiz(questoesJogo);
-    } else {git 
+    } else {
     telaFinal();
 }
 };
