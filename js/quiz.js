@@ -1,4 +1,3 @@
-//aqui ficam as perguntas feitas pelo quiz usando objeto,arrays em javascript
 var questoesJogo = 0;
 var totalScore = 0;
 const jogoQuestoes = document.getElementById("questoesJogo");
